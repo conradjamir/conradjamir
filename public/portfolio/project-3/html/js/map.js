@@ -1,6 +1,5 @@
 /*jslint devel: true*/
 /*jslint browser: true*/
-/*global $, jQuery, google*/
 
 (function () {
 
@@ -10,7 +9,6 @@
         geocoder,
         marker,
         circle,
-        bounds,
         windowWidth = $(window).width(),
         lat = 33.6588037,
         lng = -117.8738706,
@@ -266,15 +264,8 @@
             map.setZoom(12);
         }
 
-        // content of info window
-        var contentString = '<div id="content">This is a test' +
-            '</div>',
-            // init info window
-            infowindow = new google.maps.InfoWindow({
-                content: contentString
-            }),
             // define the input for autocomplete
-            input = (document.getElementById('pac-input')),
+        var input = (document.getElementById('pac-input')),
             types = document.getElementById('type-selector'),
             autocomplete = new google.maps.places.Autocomplete(input);
 
@@ -287,7 +278,7 @@
         // boundary of map
         bounds = new google.maps.LatLngBounds();
 
-        google.maps.event.addListenerOnce(map, 'tilesloaded', function (evt) {
+        google.maps.event.addListenerOnce(map, 'tilesloaded', function () {
             bounds = map.getBounds();
         });
 
@@ -342,8 +333,8 @@
         //
         autocomplete.addListener('place_changed', function () {
 
-            var place = autocomplete.getPlace(), // get results from Autocomplete
-                newBounds = new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast());
+            var place = autocomplete.getPlace();
+            // get results from Autocomplete
 
             // if input entered does not match autocomplete
             if (!place.geometry) {
