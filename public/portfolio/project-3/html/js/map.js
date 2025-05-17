@@ -9,6 +9,7 @@
         geocoder,
         marker,
         circle,
+        bounds,
         windowWidth = $(window).width(),
         lat = 33.6588037,
         lng = -117.8738706,
