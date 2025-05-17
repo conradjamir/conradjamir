@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="ad.size" content="width=160,height=600">
+
+    <title>gotmilk</title>
+
+    <meta name="description" content="gotmilk">
+    <meta name="author" content="Conrad Jamir">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+</head>
+
+<body id="main">
+    <div class="stage">
+        <div class="lds-spinner" id="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="animation">
+            <img src="assets/bg.jpg" id="bg">
+            <img src="assets/moon.png" id="moon">
+            <img src="assets/txt_1.png" id="txt1">
+            <img src="assets/txt_2.png" id="txt2">
+            <img src="assets/txt_3.png" id="txt3">
+            <img src="assets/cloud.png" id="cloud">
+            <img src="assets/books.png" id="books">
+            <img src="assets/milk_glass.png" id="milk">
+            <img src="assets/cta.png" id="cta">
+            <img src="assets/logo.png" id="logo">
+        </div>
+
+        <div id="click_tag"></div>
+
+        <div id="play">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 512 512" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg>
+        </div>
+        <div id="restart">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M6 13c0-1.65.67-3.15 1.76-4.24L6.34 7.34A8.014 8.014 0 0 0 4 13c0 4.08 3.05 7.44 7 7.93v-2.02c-2.83-.48-5-2.94-5-5.91zm14 0c0-4.42-3.58-8-8-8-.06 0-.12.01-.18.01l1.09-1.09L11.5 2.5 8 6l3.5 3.5 1.41-1.41-1.08-1.08c.06 0 .12-.01.17-.01 3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93z"></path></svg>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="assets/animation.js"></script>
+    <script>
+        var link = document.getElementById('click_tag'),
+            clickTag = 'https://www.gotmilk.com/bedtime-stories/';
+
+        link.addEventListener("click", function() {
+            window.open(clickTag, '_blank');
+        });
+    </script>
+
+</body>
+
+</html>

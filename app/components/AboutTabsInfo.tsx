@@ -12,6 +12,8 @@ import { IoLogoFigma } from "react-icons/io5";
 import { FaWordpress } from "react-icons/fa6";
 import { SiWebflow } from "react-icons/si";
 import { SiFramer } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { GoCopilot } from "react-icons/go";
 import { ExperienceAccordion } from "./ExperienceAccordion";
@@ -104,6 +106,14 @@ export default function AboutTabsInfo() {
                     <div className="flex justify-center items-center gap-2 px-6 py-3 text-white border-[1px] rounded-full w-fit max-h-[50px]">
 						<RiNextjsFill className="text-3xl" />
 						NextJS
+					</div>
+					<div className="flex justify-center items-center gap-2 px-6 py-3 text-white border-[1px] rounded-full w-fit max-h-[50px]">
+						<SiTailwindcss className="text-3xl" />
+						TailwindCSS
+					</div>
+					<div className="flex justify-center items-center gap-2 px-6 py-3 text-white border-[1px] rounded-full w-fit max-h-[50px]">
+						<SiBootstrap className="text-3xl" />
+						Bootstrap
 					</div>
 					<div className="flex justify-center items-center gap-2 px-6 py-3 text-white border-[1px] rounded-full w-fit max-h-[50px]">
 						<FaWordpress className="text-2xl" />

@@ -21,7 +21,7 @@ export default function Hero() {
 				</div>
 				<div className="flex items-center justify-end md:items-center md:h-dvh z-11 mobileLandscape:hidden">
 					<Link href="#projects" title="Navigate to preview my project" aria-label="Navigate to preview my project">
-						<div className="relative p-2 md:p-4 text-[0.725rem] font-bold tracking-[.02em] border-2 border-white rounded-full md:w-55 md:h-55 lg:w-65 lg:h-65 w-40 h-40 animate-[spin_10s_linear_infinite] transition-all duration-500 hover:paused">
+						<div className="relative p-2 md:p-3 text-[0.55rem] font-bold tracking-[.21em] border-2 border-white rounded-full md:w-55 md:h-55 lg:w-65 lg:h-65 w-40 h-40 animate-[spin_10s_linear_infinite] transition-all duration-500 hover:paused">
 							<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 								<path
 									id="circlePath"
