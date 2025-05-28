@@ -1,0 +1,168 @@
+/* 
+Author: Conrad Jamir - Front End Software Engineer
+Date Modified: January 24, 2019
+*/
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #000;
+}
+body {
+    margin: 0 auto;
+    background: #000;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    position: absolute;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+.stage,
+#click_tag {
+    width: 300px;
+    height: 600px;
+    display: block;
+    top: 50%;   
+    left: calc(50% - 300px);  
+    transform: translate(calc(-50% + 150px), -50%);
+}
+.stage {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    display: none;
+    /* prevent image load til ready */
+}
+#click_tag {
+    position: absolute;
+    top: 50%;   
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 600px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#play,
+#restart {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    cursor: pointer;
+    z-index: 1001;
+    color: white;
+    display: none;
+    top: 50%;   
+    right: 0;  
+    transform: translate(0%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#play svg,
+#restart svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+#collapsed {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 600px;
+    border: 1px solid #d4d4d4;
+    overflow: hidden;
+}
+#expanded {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 600px;
+    border: 1px solid #d4d4d4;
+    overflow: hidden;
+}
+#expandBtn {
+    position: absolute;
+    width: 160px;
+    height: 37px;
+    top: 316px;
+    right: 68px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#closeBtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 4;
+}
+#player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 600px;
+}
+#ctaLeftBurst, #ctaRightBurst {
+    position:absolute;
+    top: 317px;
+    width: 24px;
+    height: 33px;
+}
+#ctaLeftBurst {
+    left: 40px; 
+}
+#ctaRightBurst {
+    left: 235px; 
+}
+#efCta {
+    position: absolute;
+    top: 501px;
+    left: 220px;
+    width: 156px;
+    height: 36px;
+}
+#efCtaLeftBurst, #efCtaRightBurst {
+    position:absolute;
+    top: 499px;
+    width: 25px;
+    height: 39px;
+}
+#efCtaLeftBurst {
+    left: 190px; 
+}
+#efCtaRightBurst {
+    left: 385px; 
+}
+.shadow {
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(1px 1px 2px rgba(34, 34, 34, 0.3));
+}
+#frame1ImageA {
+    width: 300px;
+    height: 600px;
+}

@@ -5,7 +5,7 @@ interface CaptionsProjectTitleProps {
 }
 export default function CaptionsProjectTitle({title}: CaptionsProjectTitleProps) {
   return (
-    <div className="flex flex-col sm:justify-center sm:ps-[96px] text-white font-bold tracking-[3px] uppercase text-sm text-wrap text-left sm:text-center">
+    <div className="flex flex-col sm:justify-center sm:ps-[96px] text-white font-bold tracking-[3px] uppercase text-sm text-wrap text-left sm:text-center leading-6">
         {title}
     </div>
   )

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conrad Jamir">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Comcast</title>
+
+</head>
+
+<body id="gg">
+    <div class="stage">
+        <div id="group_1" class="">
+            <div class="kite_div">
+                <img src="images/kite.svg" class="kite kite_wiggle">
+            </div>
+            <img src="images/cloud.svg" class="cloud_blur cloud_l cloud cloud_1">
+            <img src="images/cloud.svg" class="cloud_blur cloud_s cloud cloud_2">
+            <img src="images/logo.svg" class="logo">
+            <div class="kids_group">
+                <div class="kids k"></div>
+                <div class="kids i"></div>
+                <div class="kids d"></div>
+                <div class="kids s"></div>
+            </div>
+            <div class="zone_group">
+                <div class="zone z"></div>
+                <div class="zone o"></div>
+                <div class="zone n"></div>
+                <div class="zone e"></div>
+            </div>
+        </div>
+        <div id="group_2_3" class="">
+            <img src="images/logo.svg" class="logo_2">
+            <div class="ellos_group">
+                <img src="images/ellos_txt.svg" class="ellos_txt">
+                <img src="images/tienen_txt.svg" class="g3 tienen_txt">
+                <img src="images/remoto_txt.svg" class="g3 remoto_txt">
+            </div>
+            <img src="images/remote.png" class="g3 remote">
+            <img src="images/rocket.svg" class="rocket">
+        </div>
+        <div id="group_4_5_6" class="">
+            <img src="images/cloud.svg" class="cloud_blur cloud_l cloud_3">
+            <img src="images/tv_shdw.png" class="tv_g tv_shdw">
+            <img src="images/tv.svg" class="tv_g tv">
+            <img src="images/tv_1.jpg" class="tv_g tv_1">
+            <img src="images/tv_2.jpg" class="tv_g tv_2">
+            <img src="images/wind.svg" class="wind">
+            <img src="images/balloon.svg" class="balloon">
+            <img src="images/control.svg" class="control_txt">
+            <img src="images/ven.svg" class="ven">
+        </div>
+        <div id="offer">
+            <img src="images/cambiate_txt.svg" class="cambiate_txt">
+            <div class="kids_group_2">
+                <div class="kids_2 k"></div>
+                <div class="kids_2 i"></div>
+                <div class="kids_2 d"></div>
+                <div class="kids_2 s"></div>
+            </div>
+            <div class="zone_group_2">
+                <div class="zone_2 z"></div>
+                <div class="zone_2 o"></div>
+                <div class="zone_2 n"></div>
+                <div class="zone_2 e"></div>
+            </div>
+            <img src="images/offer_txt.svg" class="offer_txt">
+            <img src="images/descubre_txt.svg" class="descubre_txt">
+            <div class="kite_div_2">
+                <img src="images/kite.svg" class="kite_2 kite_wiggle">
+            </div>
+            <img src="images/robot.svg" class="robot">
+            <div class="cta">
+                <img src="images/cta_txt.svg" class="cta_txt">
+            </div>
+        </div>
+        <div id="link"></div>
+        <div id="play">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 512 512" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg>
+        </div>
+        <div id="restart">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M6 13c0-1.65.67-3.15 1.76-4.24L6.34 7.34A8.014 8.014 0 0 0 4 13c0 4.08 3.05 7.44 7 7.93v-2.02c-2.83-.48-5-2.94-5-5.91zm14 0c0-4.42-3.58-8-8-8-.06 0-.12.01-.18.01l1.09-1.09L11.5 2.5 8 6l3.5 3.5 1.41-1.41-1.08-1.08c.06 0 .12-.01.17-.01 3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93z"></path></svg>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+    <script src="animation.js"></script>
+
+    <script>
+        var link = $("#link"),
+            clickTag = 'http://es.xfinity.com/latino/packages';
+
+        link.on("click", function() {
+            window.open(clickTag, '_blank');
+        });
+
+    </script>
+
+</body>
+
+</html>

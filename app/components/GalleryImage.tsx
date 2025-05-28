@@ -67,7 +67,7 @@ export default function GalleryImage({
                     title={String(iframeSlide.title)}
                     style={{
                       border: "none",
-                      backgroundColor: "white"
+                      backgroundColor: "#000000"
                     }}
 					          sandbox="allow-scripts"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
