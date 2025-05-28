@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="600" viewBox="0 0 300 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebeef0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_170_degrees_copy_14" data-name="170 degrees copy 14" class="cls-1" d="M0,472.5l300,36V600H0V472.5Z"/>
+  <path id="_170_degrees_copy_13" data-name="170 degrees copy 13" class="cls-1" d="M300,71.5L0,35.5V0H300V71.5Z"/>
+</svg>

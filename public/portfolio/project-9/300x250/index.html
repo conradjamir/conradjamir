@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Got Milk? - TomaLeche</title>
+
+    <meta name="description" content="Got Milk Banner">
+    <meta name="author" content="Conrad Jamir">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+</head>
+
+<body>
+    <div class="stage" id="container">
+        <div id="collapsed">
+            <img src="assets/Cow_300x250_img.jpg" id="frame1ImageA">
+            <img src="assets/logo.png" id="logo">
+            <img src="assets/frame1CopyA.png" id="frame1CopyA" class="shadow">
+            <img src="assets/frame1CopyB.png" id="frame1CopyB" class="shadow">
+            <img src="assets/ctaLeftBurst.png" id="ctaLeftBurst" class="shadow">
+            <img src="assets/ctaRightBurst.png" id="ctaRightBurst" class="shadow">
+            <div class="clickTag"></div>
+            <img src="assets/expandBtn.png" id="expandBtn" class="shadow">
+        </div>
+        <div id="expanded">
+            <div id="overlay"></div>
+            <div id="wrapper">
+                <div id="content">
+                    <video id="player" muted playsinline>
+                        <source src="assets/Cow_568x320.mp4" type="video/mp4">
+                        </source>
+                        <source src="assets/Cow_568x320.webm" type="video/webm">
+                        </source>
+                        <img src="assets/Cow_568x320_backup.jpg" title="Your browser does not support the <video> tag">
+                    </video>
+
+                    <img src="assets/ef_frame1CopyA.png" id="efFrame1CopyA" class="shadow">
+                    <img src="assets/ef_frame1CopyB.png" id="efFrame1CopyB" class="shadow">
+                    <img src="assets/ef_frame2CopyA.png" id="efFrame2CopyA" class="shadow">
+                    <img src="assets/ef_frame2CopyB.png" id="efFrame2CopyB" class="shadow">
+                    <img src="assets/ef_frame3CopyA.png" id="efFrame3CopyA" class="shadow">
+                    <img src="assets/ef_frame3CopyB.png" id="efFrame3CopyB">
+                    <img src="assets/ef_frame3Legal.png" id="efFrame3Legal" class="shadow">
+
+                    <img src="assets/ef_cta.png" id="efCta" class="shadow">
+                    <img src="assets/ef_ctaLeftBurst.png" id="efCtaLeftBurst" class="shadow">
+                    <img src="assets/ef_ctaRightBurst.png" id="efCtaRightBurst" class="shadow">
+                    <div class="clickTag"></div>
+                    <img src="assets/close_btn.png" id="closeBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="play">
+        <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 512 512" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="assets/animation.js"></script>
+</body>
+
+</html>

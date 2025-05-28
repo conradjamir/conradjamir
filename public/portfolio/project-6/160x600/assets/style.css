@@ -1,0 +1,196 @@
+/* 
+Author: Conrad Jamir - Front End Software Engineer
+Date Modified: May 22, 2018
+*/
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.stage,
+#click_tag {
+    width: 160px;
+    height: 600px;
+    display: block;
+}
+
+#play,
+#restart {
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    cursor: pointer;
+    z-index: 1001;
+    color: white;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#play svg,
+#restart svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+.stage {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #d4d4d4;
+    display:none;
+}
+
+#click_tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+.bg_2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 160px;
+    height: 600px;
+    background: url('bg_2.jpg') repeat-x;
+}
+.tools {
+    z-index: 5;
+}
+.gs-dev-tools .gs-bottom {
+    display:none !important;
+}
+img {
+    position: absolute;
+    width: 160px;
+}
+.logo {
+    position:absolute;
+    left: 50px;
+    bottom: 20px;
+    width: 63px;
+}
+.logo_fill {
+    fill: #000;
+}
+.person_autoplay {
+    position:absolute;
+    width: 80px;
+    height: 315px;
+    left: 43px;
+    top: 180px;
+    cursor: pointer;
+    z-index: 4;
+    /* background: rgba(0, 0, 255, 0.38); */
+}
+.fan_top {
+    top: 216px;
+    left: 44.5px;
+    width: 79px;
+}
+.fan_pants {
+    top: 300.5px;
+    left: 58px;
+    width: 53px;
+}
+.fan_shoes {
+    top: 411px;
+    left: 51px;
+    width: 59px;
+}
+.expert_gear {
+    top: 174.5px;
+    left: 60.5px;
+    width: 48px;
+    height: 48px;
+}
+.expert_top {
+    top: 218.5px;
+    left: 45.5px;
+    width: 78px;
+}
+.expert_pants {
+    top: 307px;
+    left: 44.5px;
+    width: 77px;
+}
+.expert_shoes {
+    top: 408px;
+    left: 56.5px;
+    width: 52px;
+}
+.tools {
+    position: absolute;
+    bottom:72px;
+    width: 100%;
+}
+
+/* GS Dev Tools Slider */
+.gs-dev-tools {
+    width: 121px;
+    left: 20px !important;
+}
+.gs-dev-tools .timeline {
+    margin-left:0 !important;
+    margin-right: 0 !important;
+}
+.gs-dev-tools .progress-bar {
+    background-color: #589cd8 !important;
+}
+.gs-dev-tools.minimal .gs-top {
+    background-color: transparent !important;
+}
+.gs-dev-tools .timeline, .gs-dev-tools .progress-bar, .gs-dev-tools .timeline-track {
+    height: 2px !important;
+}
+.gs-dev-tools .playhead {
+    width: 11px !important;
+    height: 11px !important;
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+}
+.gs-dev-tools .gs-hit-area {
+    -webkit-tap-highlight-color: transparent;
+}
+.playheadShadow {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.gs-dev-tools.minimal .in-point, .gs-dev-tools.minimal .out-point {
+     opacity:0 !important;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="600" viewBox="0 0 160 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ebeef0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="bar_copy_4" data-name="bar copy 4" class="cls-1" d="M0,504.727L159.98,522.858,160,600H0Z"/>
+  <path id="bar_copy" data-name="bar copy" class="cls-1" d="M160,73L0.022,54.729,0,0H160V73Z"/>
+</svg>

@@ -197,3 +197,12 @@ tr {
 .navbar-height {
   height: var(--navbar-height);
 }
+
+.yarl__slide_captions_container {
+  background: rgba(0, 0, 0, .85)!important;
+}
+
+.yarl__slide_description {
+  line-clamp: unset!important;
+  -webkit-line-clamp: unset!important;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conrad Jamir">
+
+    <title>Comcast</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Confetti Bottom Stage 1 -->
+        <div id="stage1"></div>
+
+        <!-- frame 1 and 2 -->
+        <div id="devicesHolder">
+            <img src="assets/GU_CCT8571_frame1_tv_160x600.png" id="frame1Tv">
+            <img src="assets/GU_CCT8571_frame1_phone_160x600.png" id="frame1Phone">
+            <img name="frame2_tv_content" src="assets/GU_CCT8571_frame2_tv_content_160x600.png" id="frame2TvContent">
+            <img src="assets/GU_CCT8571_frame1_laptop_160x600.png" id="frame1Laptop">
+            <img src="assets/GU_CCT8571_frame1_tablet_160x600.png" id="frame1Tablet">
+            <img name="frame2_phone_content" src="assets/GU_CCT8571_frame2_phone_content_160x600.png" id="frame2PhoneContent">
+            <img name="frame2_laptop_content" src="assets/GU_CCT8571_frame2_laptop_content_160x600.png" id="frame2LaptopContent">
+            <img name="frame2_tablet_content" src="assets/GU_CCT8571_frame2_tablet_content_160x600.png" id="frame2TabletContent">
+        </div>
+        <div name="frame1and2CopyA" id="frame1and2CopyA" class="xbb fs18  lhx1_2">El regalo<br>perfecto <span class="frame2Reveal">para todos<br>tus regalos.</span></div>
+
+        <!-- frame 3 -->
+        <img name="frame3Image" src="assets/GU_CCT8571_frame3_tv_160x600.jpg" id="frame3Image">
+        <div id="frame3CopyAHolder">
+            <div name="frame3CopyA" id="frame3CopyA" class="xbb lhx1_2 fs17">
+                X1 te permite<br>encontrar<br>tus favoritos y,<br>muy pronto, también<br>Amazon Prime<br>Video.
+            </div>
+        </div>
+
+        <!-- frame 4 -->
+        <img name="frame4Image" src="assets/GU_CCT8571_frame4_tablet_160x600.png" id="frame4Image">
+        <div id="frame4CopyAHolder">
+            <div name="frame4CopyA" id="frame4CopyA" class="xbb fs18 lhx1_2">
+                Y la mejor<br>experiencia WiFi<br>en el hogar<br>para tus equipos<br>tecnológicos.
+            </div>
+        </div>
+
+        <!-- Confetti in front of card Stage 2 -->
+        <div id="stage2"></div>
+
+        <!-- End Frame -->
+        <img name="bfRibbon" src="assets/GU_CCT8571_bfRibbon_160x600.png" id="bfRibbon">
+
+        <div id="endFrameHeaderHolder">
+            <div name="endFrameHeader" id="endFrameHeader" class="xbb fs18">
+                ¡Apresúrate!<br>El regalo<br>perfecto<br>no durará.
+            </div>
+        </div>
+
+        <!-- Offer Price -->
+        <div id="offerPriceHolder">
+            <div id="offerPrice" class="xbb">
+                <div name="offerTitle" id="offerTitle" class="fs14">
+                    TV + Internet
+                </div>
+                <div id="symbolPriceCentsRangeHolder">
+                    <div name="symbol" id="symbol"><sup>$</sup></div>
+                    <div name="price" id="price">35</div>
+                    <div id="rightCentsRangeHolder">
+                        <div name="cents" id="cents"></div>
+                        <div name="range" id="range" class="fs9">cada uno<br>al mes<br>por 1 año</div>
+                    </div>
+                </div>
+
+                <div name="offerContract" id="offerContract" class="fs9">
+                    al combinar los dos<br>con contrato de 1 año
+                </div>
+                
+                <!-- Divider Keyline -->
+                <div id="divider"></div>
+            </div>
+        </div> 
+
+        <!-- Lockup Image -->
+        <img name="endFrameLockupImage" src="assets/GU_blank.gif" id="endFrameLockupImage">
+        <!-- conditional animation, if blank.gif then endFrameBoltOn only -->
+
+        <!-- Bolt-On -->
+        <div id="endFrameBoltOnHolder">
+            <div name="endFrameBoltOn" id="endFrameBoltOn" class="xbb fs12">Entérate cómo puedes<br>ahorrar al incluir<br>Xfinity Mobile<br>con tu Internet.</div>
+            <!-- conditional animation, if empty then endFrameLockupImage_160x600 only-->
+        </div>
+
+        <!-- Bolt-On-2 -->
+        <div id="endFrameBoltOn2Holder">
+            <div name="endFrameBoltOn2" id="endFrameBoltOn2" class="xbb fs12"></div>
+            <!-- conditional animation, if empty then endFrameLockupImage_160x600 only-->
+        </div>
+
+        <!-- Phone Number -->
+        <div id="phoneHolder">
+            <div name="phone" id="phone" class="xbb fs11">1-800-333-0010</div>
+        </div>
+        
+        <!-- Bottom Bar with Price/Logo -->
+
+        <img src="assets/GU_CCT8571_bar_160x600.svg" id="topBottomBar">
+
+        <img name="logo" src="assets/GU_logo_k.svg" id="logo">
+
+        <!-- Bottom Offer Price -->
+        <div id="bottomOfferPriceHolder">
+            <div id="bottomOfferPrice" class="xsb">
+                <div name="bottomOfferTitle" id="bottomOfferTitle" class="fs13 ls3 lhx1_1">
+                    TV + Internet
+                </div>
+                <div id="bottomSymbolPriceCentsRangeHolder">
+                    <div name="bottomSymbol" id="bottomSymbol">$</div>
+                    <div name="bottomPrice" id="bottomPrice"><span class="fs36">35</span></div>
+                    <div id="bottomRightCentsRangeHolder">
+                        <div name="bottomCents" id="bottomCents" class="fs16"></div>
+                        <div name="bottomRange" id="bottomRange" class="xsm fs9">cada uno<br>al mes<br>por 1 año</div>
+                    </div>
+                </div>
+                <div name="bottomOfferContract" id="bottomOfferContract" class="xsm fs9">
+                    al combinar los dos<br>con contrato de 1 año
+                </div>
+            </div>
+        </div>
+
+        <!-- Legal Copy -->
+        <div id="legalCopyHolder">
+            <div name="legal" id="legalCopy" class="xbl lsm2 fs9">
+                Equipo, impuestos y otros cargos<br>son extray sujetos a cambio.<br>Ver legal para detalles.
+            </div>
+        </div>
+
+        <!-- Call To Action Button -->
+        <div id="ctaBtn" class="xbn fs12">
+            <div name="cta" id="ctaText">Adquiérelo aquí</div>
+        </div>
+
+        <!-- Confetti in front most Stage 3 -->
+        <div id="stage3"></div>
+
+        <div id="play">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 512 512" height="50px" width="50px" xmlns="http://www.w3.org/2000/svg"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"></path></svg>
+        </div>
+        <div id="restart">
+            <svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M6 13c0-1.65.67-3.15 1.76-4.24L6.34 7.34A8.014 8.014 0 0 0 4 13c0 4.08 3.05 7.44 7 7.93v-2.02c-2.83-.48-5-2.94-5-5.91zm14 0c0-4.42-3.58-8-8-8-.06 0-.12.01-.18.01l1.09-1.09L11.5 2.5 8 6l3.5 3.5 1.41-1.41-1.08-1.08c.06 0 .12-.01.17-.01 3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93z"></path></svg>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.flashtalking.com/frameworks/js/gsap/latest/TweenMax.min.js"></script>
+    <script src="assets/confetti.js"></script>
+    <script src="assets/animation.js"></script>
+</body>
+
+</html>
