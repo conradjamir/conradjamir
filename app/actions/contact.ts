@@ -1,6 +1,9 @@
 "use server"
 
 import { z } from "zod"
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Form validation schema
 const contactSchema = z.object({
@@ -27,6 +30,31 @@ export type FormState = {
   success: boolean
 }
 
+async function sendEmail({
+  to,
+  from,
+  subject,
+  html,
+}: {
+  to: string
+  from: string
+  subject: string
+  html: string
+}) {
+  try {
+    await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>', // Update this once you verify your domain
+      to: to,
+      subject: subject,
+      html: html,
+      replyTo: from,
+    });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error;
+  }
+}
+
 export async function submitContactForm(prevState: FormState, formData: FormData): Promise<FormState> {
   // Validate form fields
   const validatedFields = contactSchema.safeParse({
@@ -47,14 +75,8 @@ export async function submitContactForm(prevState: FormState, formData: FormData
   const { name, email, message } = validatedFields.data
 
   try {
-    // Here you can either:
-    // 1. Send an email using a service like Resend, SendGrid, or Nodemailer
-    // 2. Save to a database
-    // 3. Send to a webhook
-
-    // For demonstration, I'll simulate an email send
     await sendEmail({
-      to: "conradjamir@gmail.com", // Replace with your email
+      to: "conradjamir@gmail.com",
       from: email,
       subject: `New contact form submission from ${name}`,
       html: `
@@ -79,42 +101,4 @@ export async function submitContactForm(prevState: FormState, formData: FormData
       errors: {},
     }
   }
-}
-
-// Mock email function - replace with your preferred email service
-async function sendEmail({
-  to,
-  from,
-  subject,
-  html,
-}: {
-  to: string
-  from: string
-  subject: string
-  html: string
-}) {
-  // Simulate email sending delay
-  await new Promise((resolve) => setTimeout(resolve, 1000))
-
-  // In a real application, you would use a service like:
-  // - Resend: https://resend.com/
-  // - SendGrid: https://sendgrid.com/
-  // - Nodemailer with SMTP
-  // - AWS SES
-
-  console.log("Email sent:", { to, from, subject, html })
-
-  // Uncomment and modify this example for Resend:
-  /*
-  const { Resend } = require('resend')
-  const resend = new Resend(process.env.RESEND_API_KEY)
-  
-  await resend.emails.send({
-    from: 'contact@yourdomain.com',
-    to: to,
-    subject: subject,
-    html: html,
-    reply_to: from,
-  })
-  */
 }
