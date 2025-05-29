@@ -1,4 +1,4 @@
-import ContactForm from "./contact-form";
+import ContactForm from "./ContactForm";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";

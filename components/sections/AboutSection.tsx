@@ -1,5 +1,6 @@
-import AboutTabsInfo from "@/app/components/AboutTabsInfo";
+import AboutTabsInfo from "@/components/sections/AboutTabsInfo";
 import Image from "next/image";
+import { aboutData } from "@/app/data/about";
 
 export default function AboutSection() {
 	return (
@@ -11,12 +12,12 @@ export default function AboutSection() {
 						I’m a multidisciplinary front-end developer and creative producer with over 20 years of experience. For the past several years, I’ve focused on developing animated digital ads, social media content, static creatives, and landing pages for major campaigns. I combine
 						strong technical skills with creative storytelling to deliver polished digital experiences across multiple platforms.
 					</p>
-					<AboutTabsInfo />					
+					<AboutTabsInfo data={aboutData} />
 				</div>
 
 				<div className="flex flex-col bg-black rounded-full aspect-square">
 					<div className="hidden mt-8 lg:block"></div>
-					<Image src="/images/me.webp" alt="me" width={300} height={379} className="w-full"/>
+					<Image src="/images/me.webp" alt="me" width={300} height={379} className="w-full" />
 				</div>
 			</div>
 		</section>

@@ -1,10 +1,10 @@
 "use client";
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import Hero from "./components/Hero";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
+import HeroSection from "../components/sections/HeroSection";
+import AboutSection from "../components/sections/AboutSection";
+import ProjectsSection from "../components/sections/ProjectsSection";
+import ContactSection from "../components/sections/ContactSection";
 
 export default function Home() {
 	const pathname = usePathname();
@@ -22,7 +22,7 @@ export default function Home() {
 	
 	return (
 		<>
-			<Hero />
+			<HeroSection />
 			<AboutSection />
 			<ProjectsSection />
 			<ContactSection />
