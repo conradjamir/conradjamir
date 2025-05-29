@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import { useState } from "react";
 import Image from "next/image";
-import type { GallerySlide, IframeSlide } from "@/app/data/slides";
+import type { GallerySlide, IframeSlide } from "@/app/types/slides";
 
 interface GalleryImageProps {
   src: string;
