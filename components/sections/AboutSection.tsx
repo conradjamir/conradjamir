@@ -1,4 +1,4 @@
-import AboutTabsInfo from "@/app/components/AboutTabsInfo";
+import AboutTabsInfo from "@/components/sections/AboutTabsInfo";
 import Image from "next/image";
 
 export default function AboutSection() {

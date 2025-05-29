@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { SwatchBook } from "lucide-react";
 import { Paintbrush } from "lucide-react";
 import { BringToFront } from "lucide-react";

@@ -1,9 +1,9 @@
 "use client";
-import HeroVideo from "@/app/components/HeroVideo";
+import HeroVideo from "@/components/sections/HeroVideo";
 import Link from "next/link";
 
 
-export default function Hero() {
+export default function HeroSection() {
 	return (
 		<section className="relative w-full mx-auto bg-black h-dvh z-2">
 			<HeroVideo />

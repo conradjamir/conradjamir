@@ -1,6 +1,6 @@
 "use client";
 import GalleryImage from "./GalleryImage";
-import { projects } from "../data/slides";
+import { projects } from "../../app/data/slides";
 
 export default function ProjectsSection() {
   return (

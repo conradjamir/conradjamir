@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import CaptionsProjectDescription from "../components/CaptionsProjectDescription";
-import CaptionsProjectTitle from "../components/CaptionsProjectTitle";
+import CaptionsProjectDescription from "../../components/sections/CaptionsProjectDescription";
+import CaptionsProjectTitle from "../../components/sections/CaptionsProjectTitle";
 
 export interface BaseSlide {
   width: number;
