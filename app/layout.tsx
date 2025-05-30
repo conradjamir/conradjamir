@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "../components/sections/Header";
@@ -18,6 +19,7 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
 				<Header />
 				<main>{children}</main>
 				<Footer />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
