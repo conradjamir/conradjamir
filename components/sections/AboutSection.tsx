@@ -4,7 +4,7 @@ import { aboutData } from "@/app/data/about";
 
 export default function AboutSection() {
 	return (
-		<section id="about" className="flex items-center justify-center py-10 bg-black bg-center bg-cover lg:py-20 md:px-0 scroll-mt-navbar">
+		<section id="about" className="flex items-start py-10 mb-6 md:px-0 scroll-mt-navbar">
 			<div className="container flex flex-col items-center gap-8 px-4 mx-auto lg:items-start lg:justify-between lg:flex-row">
 				<div className="text-white lg:py-0 lg:w-3/4">
 					<h2 className="text-4xl font-extrabold lg:text-5xl">About Me</h2>

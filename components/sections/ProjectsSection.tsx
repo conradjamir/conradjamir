@@ -4,8 +4,8 @@ import { projects } from "../../app/data/slides";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="mb-10 bg-black scroll-mt-navbar">
-      <div className="container px-4 py-10 mx-auto text-white">
+    <section id="projects" className="py-10 bg-black scroll-mt-navbar">
+      <div className="container px-4 pb-10 mx-auto text-white">
         <h2 className="text-4xl font-extrabold lg:text-5xl">Projects</h2>
       </div>
       

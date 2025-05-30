@@ -5,9 +5,9 @@ import { IoMdMail } from "react-icons/io";
 
 export default function ContactSection() {
 	return (
-		<section id="contact" className="flex items-center py-10 text-white lg:h-dvh-minus-navbar h-dvh md:px-0 lg:py-20">
+		<section id="contact" className="flex items-start py-10 mb-10 text-white md:mb-60 md:px-0 scroll-mt-navbar">
 			<div className="container px-4 mx-auto">
-				<h1 className="py-10">Contact Me</h1>	
+				<h1 className="pb-10">Contact Me</h1>	
 				<div className="flex flex-col justify-between w-full gap-6 lg:gap-12 flexitems-start md:flex-row">
 				<div className="flex flex-col gap-4 mb-8 text-md">
 					<p className="max-w-[1/2] mb-4">
