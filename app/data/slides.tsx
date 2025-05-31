@@ -1,12 +1,13 @@
 import { Project } from "../types/slides";
-import CaptionsProjectDescription from "../../components/sections/CaptionsProjectDescription";
-import CaptionsProjectTitle from "../../components/sections/CaptionsProjectTitle";
+import CaptionsProjectDescription from "@/components/sections/CaptionsProjectDescription";
+import CaptionsProjectTitle from "@/components/sections/CaptionsProjectTitle";
+import CaptionsProjectTitleLink from "@/components/sections/CaptionsProjectTitleLink";
 
 export const projects: Project[] = [
   {
     id: "project_1",
     slides: [
-      { type: "image", src: "/portfolio/project-1/project01.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Craig Olsen eCommerce <br /><a href="https://simpleinc.net/craigolsendesign.com/" target="_blank" rel="noopener noreferrer">View Demo Site</a></>} />, description: <CaptionsProjectDescription role="UI/UX | Magento Development" technology="HTML | CSS | Javascript | PHP" notes="Theme customization, banner header design and store setup." /> },
+      { type: "image", src: "/portfolio/project-1/project01.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Craig Olsen eCommerce <br /><CaptionsProjectTitleLink url="https://simpleinc.net/craigolsendesign.com/" text="View Demo Site"/></>} />, description: <CaptionsProjectDescription role="UI/UX | Magento Development" technology="HTML | CSS | Javascript | PHP" notes="Theme customization, banner header design and store setup." /> },
       { type: "image", src: "/portfolio/project-1/project01.image02.3024x1890.3024w.jpg", alt: "About Page", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-1/project01.image03.3024x1890.3024w.jpg", alt: "Furniture Page", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-1/project01.image04.3024x1890.3024w.jpg", alt: "Coleman Cabinet Product Page", width: 3024, height: 1890, title: "", description: ""},
@@ -28,7 +29,7 @@ export const projects: Project[] = [
   {
     id: "project_3",
     slides: [
-      { type: "image", src: "/portfolio/project-3/project03.image01.3840x2160.3840w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>#boneslovemilk : Microsite for Freestyle Delivery Activation Campaign <br /><a href="https://simpleinc.net/freestyle-delivery/" target="_blank" rel="noopener noreferrer">View Live Site</a></>} />, description: <CaptionsProjectDescription role="UX | Development " technology="Google API | Bootstrap | JS | Jquery | PHP" notes="Responsible for the overall UX design and development. Custom date counter count down that dynamically changed the layout of the page and activated the Google Maps API implementation that verifies the user’s address is within the Freestyle Delivery Zone. Desktop and Mobile optimized with branded Google maps of pin drop and skull background." /> },
+      { type: "image", src: "/portfolio/project-3/project03.image01.3840x2160.3840w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>#boneslovemilk : Microsite for Freestyle Delivery Activation Campaign <br /><CaptionsProjectTitleLink url="https://simpleinc.net/freestyle-delivery/" text="View Demo Site"/></>} />, description: <CaptionsProjectDescription role="UX | Development " technology="Google API | Bootstrap | JS | Jquery | PHP" notes="Responsible for the overall UX design and development. Custom date counter count down that dynamically changed the layout of the page and activated the Google Maps API implementation that verifies the user’s address is within the Freestyle Delivery Zone. Desktop and Mobile optimized with branded Google maps of pin drop and skull background." /> },
       { type: "image", src: "/portfolio/project-3/project03.image02.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-3/project03.image03.3024x1890.3024w.jpg", alt: "Video Section", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-3/project03.image04.3024x1890.3024w.jpg", alt: "Team Rider Section", width: 3024, height: 1890, title: "", description: ""},
@@ -44,7 +45,7 @@ export const projects: Project[] = [
   {
     id: "project_5",
     slides: [
-      { type: "image", src: "/portfolio/project-5/project05.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Freds Best Pizza <br /><a href="https://www.simpleinc.net/fredsbestpizza.com/" target="_blank" rel="noopener noreferrer">View Live Site</a></>} />, description: <CaptionsProjectDescription role="UX/UI Design and Development" technology="Bootstrap | JS | Jquery | PHP" notes="Responsible for the UX/UI design, production, and development." /> },
+      { type: "image", src: "/portfolio/project-5/project05.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Freds Best Pizza <br /><CaptionsProjectTitleLink url="https://www.simpleinc.net/fredsbestpizza.com/" text="View Demo Site"/></>} />, description: <CaptionsProjectDescription role="UX/UI Design and Development" technology="Bootstrap | JS | Jquery | PHP" notes="Responsible for the UX/UI design, production, and development." /> },
       { type: "image", src: "/portfolio/project-5/project05.image02.3024x1890.3024w.jpg", alt: "Slide 2 Home Page", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-5/project05.image03.3024x1890.3024w.jpg", alt: "Services Section", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-5/project05.image04.3024x1890.3024w.jpg", alt: "Pizza Page", width: 3024, height: 1890, title: "", description: ""},
@@ -101,7 +102,7 @@ export const projects: Project[] = [
   {
     id: "project_8",
     slides: [
-      { type: "image", src: "/portfolio/project-8/project08.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Slatespot Dyslexia Tutoring | Homeschooling made simple <br /><a href="https://slatespot.com" target="_blank" rel="noopener noreferrer">View Live Site</a></>} />, description: <CaptionsProjectDescription role="UX/UI Design and Development" technology="Wordpress" notes="Responsible for the UX/UI design, production, and development." /> },
+      { type: "image", src: "/portfolio/project-8/project08.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>Slatespot Dyslexia Tutoring | Homeschooling made simple <br /><CaptionsProjectTitleLink url="https://slatespot.com" text="View Live Site"/></>} />, description: <CaptionsProjectDescription role="UX/UI Design and Development" technology="Wordpress" notes="Responsible for the UX/UI design, production, and development." /> },
       { type: "image", src: "/portfolio/project-8/project08.image02.3024x1890.3024w.jpg", alt: "Slide 2 Home Page", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-8/project08.image03.3024x1890.3024w.jpg", alt: "Services Section", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-8/project08.image04.3024x1890.3024w.jpg", alt: "Pizza Page", width: 3024, height: 1890, title: "", description: ""},
@@ -161,7 +162,7 @@ export const projects: Project[] = [
   {
     id: "project_13",
     slides: [
-      { type: "image", src: "/portfolio/project-13/project13.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>MNTN/Alpine Rebuild & Optimize<br /><div><a href="https://simpleinc.net/mountain/" target="_blank" rel="noopener noreferrer">View Demo Site</a> | <a href="https://mountain.com/high-performance/" target="_blank" rel="noopener noreferrer">View Live Site</a></div></>} />, description: <CaptionsProjectDescription role="Consulting/Demo in Wordpress Development and Optimization" technology="Wordpress" notes="Complete rebuild in Wordpress and optimized for performance, accessibility, best practices and SEO for Google PageSpeed Insights. Please compare demo site and live site and redo PageSpeed Insight test for live comparison results." /> },
+      { type: "image", src: "/portfolio/project-13/project13.image01.3024x1890.3024w.jpg", alt: "Home Page", width: 3024, height: 1890, title: <CaptionsProjectTitle title={<>MNTN/Alpine Rebuild & Optimize<br /><div className="flex flex-wrap sm:inline-flex justify-start sm:justify-center items-center align-middle"><CaptionsProjectTitleLink url="https://simpleinc.net/mountain/" text="View Demo Site"/> <span className="px-2">|</span> <CaptionsProjectTitleLink url="https://mountain.com/high-performance/" text="View&nbsp;Live&nbsp;Site"/></div></>} />, description: <CaptionsProjectDescription role="Consulting/Demo in Wordpress Development and Optimization" technology="Wordpress" notes="Complete rebuild in Wordpress and optimized for performance, accessibility, best practices and SEO for Google PageSpeed Insights. Please compare demo site and live site and redo PageSpeed Insight test for live comparison results." /> },
       { type: "image", src: "/portfolio/project-13/project13.image02.3024x1890.3024w.jpg", alt: "Elite Racing Section", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-13/project13.image03.3024x1890.3024w.jpg", alt: "Services Section", width: 3024, height: 1890, title: "", description: ""},
       { type: "image", src: "/portfolio/project-13/project13.image04.3024x1890.3024w.jpg", alt: "Next Gen Section", width: 3024, height: 1890, title: "", description: ""},
