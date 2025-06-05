@@ -1,0 +1,358 @@
+/* 
+Author: Conrad Jamir - Front End Software Engineer
+Date Modified: April 15, 2016
+*/
+
+body {
+    display: none;
+    /* prevent image load til ready */
+}
+.hide {
+    display: none;
+}
+.stage,
+#link {
+    width: 728px;
+    height: 90px;
+    display: block;
+}
+.stage {
+    position: relative;
+    background: url('images/bg.jpg') no-repeat 0 0;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+#link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#play,
+#restart {
+    position: absolute;
+    width: 728px;
+    height: 90px;
+    cursor: pointer;
+    z-index: 4;
+    color: white;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#play svg,
+#restart svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+
+img,
+.kids_group,
+.zone_group,
+.kids_group_2,
+.zone_group_2 {
+    position: absolute;
+}
+
+/* group 1 */
+
+.cloud_blur {
+    /*    added blur */
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+.cloud_s {
+    width: 52px;
+}
+.cloud_l {
+    width: 66px;
+}
+.cloud_1 {
+    top: 8px;
+    left: 54px;
+}
+.cloud_2 {
+    top: 26px;
+    left: -6px;
+}
+.cloud_3 {
+    top: 6px;
+    left: 96px;
+}
+.cloud_6 {
+    top: 4px;
+    left: 146px;
+}
+.cloud_7 {
+    top: -9px;
+    left: 47px;
+}
+.cloud_8 {
+    top: 36px;
+    left: -6px;
+}
+.logo {
+    width: 62px;
+}
+.logo_2 {
+    width: 71px;
+}
+.logo {
+    top: 8px;
+    left: 244px;
+}
+.logo_2 {
+    top: 9px;
+    right: 13px;
+}
+.kids,
+.zone {
+    display: block;
+    float: left;
+}
+.kids_group {
+    top: 36px;
+    left: 243px;
+}
+.kids.k {
+    background: url('images/kids.svg') no-repeat 0 0;
+    width: 35px;
+    height: 38px;
+}
+.kids.i {
+    background: url('images/kids.svg') no-repeat -35px 0;
+    width: 16px;
+    height: 38px;
+}
+.kids.d {
+    background: url('images/kids.svg') no-repeat -51px 0;
+    width: 32px;
+    height: 38px;
+}
+.kids.s {
+    background: url('images/kids.svg') no-repeat -83px 0;
+    width: 24px;
+    height: 38px;
+}
+.zone_group {
+    top: 38px;
+    left: 353px;
+}
+.zone.z {
+    background: url('images/zone.svg') no-repeat 0 0;
+    width: 30px;
+    height: 36px;
+}
+.zone.o {
+    background: url('images/zone.svg') no-repeat -30px 0;
+    width: 41px;
+    height: 36px;
+}
+.zone.n {
+    background: url('images/zone.svg') no-repeat -71px 0;
+    width: 37px;
+    height: 36px;
+}
+.zone.e {
+    background: url('images/zone.svg') no-repeat -108px 0;
+    width: 23px;
+    height: 36px;
+}
+.kite_div {
+    position: absolute;
+    top: 12px;
+    left: 590px;
+}
+.kite {
+    width: 100px;
+}
+.rocket {
+    width: 41px;
+    top: 200px;
+    left: -300px;
+    -webkit-transform: rotate(67deg);
+    /* Safari */
+    transform: rotate(67deg);
+}
+
+/* group 2 & 3 */
+
+.ellos_txt {
+    width: 184px;
+    top: 8px;
+    left: 272px;
+    opacity: 1;
+}
+.tienen_txt {
+    top: 15px;
+    left: 342px;
+    width: 82px;
+    opacity: 1;
+}
+.remoto_txt {
+    width: 164px;
+    top: 32px;
+    left: 367px;
+    opacity: 1;
+}
+.remote {
+    width: 37px;
+    top: 4px;
+    left: 540px;
+}
+
+/* group 4 */
+
+.tv_shdw {
+    top: 79px;
+    left: 489px;
+    width: 124px;
+    opacity: .8;
+}
+.tv {
+    top: 1px;
+    left: 487px;
+    width: 127px;
+}
+.tv_1,
+.tv_2 {
+    top: 12px;
+    left: 493px;
+    width: 114px;
+    opacity: 1;
+}
+.balloon {
+    width: 90px;
+    height: 90px;
+    top: -3px;
+    left: 25px;
+    -webkit-transform: rotate(5.1deg);
+    /* Safari */
+    transform: rotate(5.1deg);
+}
+.wind {
+    width: 69px;
+    left: -30px;
+    top: 41px;
+}
+.control_txt {
+    width: 287px;
+    top: 16px;
+    left: 180px;
+}
+.ven {
+    width: 234px;
+    top: 20px;
+    left: 238px;
+}
+
+/* group offer */
+
+.cambiate_txt {
+    top: 17px;
+    left: 46px;
+}
+.kids_2,
+.zone_2 {
+    display: block;
+    float: left;
+}
+.kids_group_2 {
+    top: 42px;
+    left: 65px;
+}
+.kids_2.k {
+    background: url('images/kids.svg') no-repeat 0 0;
+    background-size: 86px 30px;
+    width: 28px;
+    height: 30px;
+}
+.kids_2.i {
+    background: url('images/kids.svg') no-repeat -28px 0;
+    background-size: 86px 30px;
+    width: 13px;
+    height: 30px;
+}
+.kids_2.d {
+    background: url('images/kids.svg') no-repeat -41px 0;
+    background-size: 86px 30px;
+    width: 26px;
+    height: 30px;
+}
+.kids_2.s {
+    background: url('images/kids.svg') no-repeat -67px 0;
+    background-size: 86px 30px;
+    width: 19px;
+    height: 30px;
+}
+.zone_group_2 {
+    top: 42px;
+    left: 154px;
+}
+.zone_2.z {
+    background: url('images/zone.svg') no-repeat 0 0;
+    background-size: 105px 29px;
+    width: 23px;
+    height: 31px;
+}
+.zone_2.o {
+    background: url('images/zone.svg') no-repeat -23px 0;
+    background-size: 105px 29px;
+    width: 31px;
+    height: 31px;
+}
+.zone_2.n {
+    background: url('images/zone.svg') no-repeat -54px 0;
+    background-size: 105px 29px;
+    width: 29px;
+    height: 31px;
+}
+.zone_2.e {
+    background: url('images/zone.svg') no-repeat -83px 0;
+    background-size: 105px 29px;
+    width: 22px;
+    height: 31px;
+}
+.offer_txt {
+    top: 7px;
+    left: 299px;
+}
+.descubre_txt {
+    width: 107px;
+    top: 27px;
+    left: 413px;
+}
+.cta {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background: #2ea0dd;
+    top: 62px;
+    left: 600px
+}
+.cta_txt {
+    top: 5px;
+    left: 11px;
+}
+.kite_div_2 {
+    position: absolute;
+    top: 9px;
+    left: 536px;
+}
+.kite_2 {
+    width: 100px;
+}
+.robot {
+    width: 27px;
+    top: 53px;
+    left: 10px;
+}
