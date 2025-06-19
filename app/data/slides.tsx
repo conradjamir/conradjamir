@@ -27,7 +27,7 @@ export const projects: Project[] = [
 					<CaptionsProjectDescription
 						role="UI/UX | Magento Development"
 						technology="HTML | CSS | Javascript | PHP"
-						notes="The comprehensive setup of an eCommerce store powered by Magento, encompassing branding and customization of the theme, banner header design, and staff training."
+						notes="Complete Magento eCommerce store setup, including theme branding and customization, banner header designs, and staff training."
 					/>
 				),
 			},
